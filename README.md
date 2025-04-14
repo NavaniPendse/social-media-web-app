@@ -57,15 +57,78 @@ This **full-stack social media web application** is built using the **MERN stack
 
 ---
 
+
+---
+
 ## ⚙️ Setup Instructions
 
-### 🔧 Prerequisites
-- **Node.js** installed
-- **MongoDB** (locally or via [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
-- **Visual Studio Code** or any code editor
+### 1. Clone the Repository
 
-### 🚀 Running the App
+```bash
+git clone https://github.com/Sathishnaik786/Social_Media_Web_App.git
+cd Social_Media_Web_App
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/Sathishnaik786/Social_Media_Web_App]
+2. Backend Setup
+
+cd backend
+npm install
+
+Create a .env file in /backend:
+
+PORT=4000
+MONGO_DB=mongodb://localhost:27017/socialmedia
+JWT_KEY=yourSuperSecretKey
+
+Start the backend server:
+
+npm start
+
+Server will run on: http://localhost:4000
+
+3. Frontend Setup
+
+cd ../frontend
+npm install
+
+Start the frontend server:
+
+npm start
+
+App will run on: http://localhost:3000
+📦 Features
+
+    ✅ User registration & login
+
+    ✅ JWT authentication
+
+    ✅ Create and view posts
+
+    ✅ Upload profile picture/post image
+
+    ✅ Responsive UI
+
+🧪 API Endpoints (Sample)
+Method	Endpoint	Description
+POST	/auth/register	Register new user
+POST	/auth/login	User login
+GET	/user/:id	Get user profile
+POST	/post	Create new post
+GET	/post/:id	Get post by ID
+📸 Image Upload
+
+    Uploads are stored in the /public/images/ folder.
+
+    Access them via: http://localhost:4000/images/<filename>
+
+📚 License
+
+This project is licensed under the MIT License.
+Feel free to fork and modify for your own projects!
+🙌 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+✨ Author
+
+Islavath Sathish Naik
+📧 sathishnaikislavath@gmail.com
+🔗 Portfolio | GitHub
