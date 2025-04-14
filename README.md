@@ -62,7 +62,7 @@ This **full-stack social media web application** is built using the **MERN stack
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/Sathishnaik786/Social_Media_Web_App.git
