@@ -1,8 +1,9 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import dotenv from 'dotenv';
+
 
 import AuthRoute from './Routes/AuthRoute.js';
 import UserRoute from './Routes/UserRoute.js';
@@ -29,6 +30,8 @@ app.use('/post', PostRoute);
 app.use('/upload', UploadRoute);
 
 // MongoDB Connection
+console.log("MONGO_DB URL:", process.env.MONGO_DB);
+
 const PORT = process.env.PORT || 4000;
 const MONGO_DB = process.env.MONGO_DB;
 
